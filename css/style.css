@@ -12,7 +12,67 @@ body {
 }
 /* /mix */
 
+/* buttons */
+.btn--bordered, .header__nav .btn--bordered {
+    background-color: #fff;
+    border: 1px solid #006aff;
+    color: #006aff;
+}
+.btn--bordered:hover, .header__nav .btn--bordered:hover {
+    background-color: #006aff;
+    color: #fff;
+}
+/* buttons */
+
+
 /* header */
+header {
+    line-height: 60px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(3, 27, 78, 0.1);
+}
+
 #header__logo {
     max-height: 28px;
+}
+
+.header__nav {
+    display: none;
+}
+.header__nav li {
+    margin: 0 3px;
+}
+
+.header__nav a {
+    color: #031b4e;
+}
+.header__nav a:hover {
+    color: #006aff;
+    text-decoration: none;
+}
+
+.header__nav a i {
+    padding-left: 5px;
+    font-size: 10px;
+}
+
+#btn--menu {
+    border: none;
+}
+
+/* header responsive */
+/* ---- from medium devices / desktops ----  */
+@media screen and (min-width:992px) {
+    .header__nav {
+        display: inline-block;
+    }
+
+    #btn--menu {
+        display: none;
+    }
+
 }

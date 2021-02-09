@@ -21,37 +21,43 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- /style -->
 </head>
-<body class="debug">
+<body class="">
     <header>
         <div class="container">
             <div class="row">
+                <!-- header logo -->
                 <div class="col-xs-6 col-md-3">
-                    <img id="header__logo" src="img/logo.png" alt="DigitalOcean Logo">
+                    <a href="#"><img id="header__logo" src="img/logo.png" alt="DigitalOcean Logo"></a>
                 </div>
+                <!-- /header logo -->
+                <!-- header__nav--right -->
                 <div class="col-xs-6 col-md-9">
                     <div class="row">
+                        <!-- header__nav--right--left -->
                         <div class="col-xs-6">
                             <nav>
-                                <ul class="list-inline">
+                                <ul class="header__nav list-inline">
                                     <li><a href="#">Products<i class="fas fa-chevron-down"></i></a></li>
                                     <li><a href="#">Customer</a></li>
                                     <li><a href="#">Community<i class="fas fa-chevron-down"></i></a></li>
                                     <li><a href="#">Pricing</a></li>
                                 </ul>
                             </nav>
-                        </div>
-                        <div class="col-xs-6">
-                            <nav class="text-right">
+                        </div> 
+                        <!-- /header__nav--right--left -->
+                        <!-- header__nav--right--right -->
+                        <div class="col-xs-6 text-right">
+                            <nav class="header__nav">
                                 <ul class="list-inline">
                                     <li><a href="#">Docs</a></li>
                                     <li><a href="#">Support<i class="fas fa-chevron-down"></i></a></li>
                                     <li><a href="#">Login</a></li>
-                                    <li><a href="#">Sign In</a></li>
+                                    <li><a href="#" class="btn btn--bordered">Sign Up</a></li>
                                 </ul>
                             </nav>
-                            <!-- <button><i class="fas fa-bars"></i></button> -->
+                            <button id="btn--menu" class="btn btn--bordered"><i class="fas fa-bars"></i></button>
                         </div>
-
+                        <!-- /header__nav--right--right -->
                     </div>
                     
                 </div>
