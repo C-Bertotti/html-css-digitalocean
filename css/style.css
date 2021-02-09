@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    padding-top: 60px;
 }
 
 .debug * {
@@ -11,6 +12,15 @@ body {
     margin-bottom: 0;
 }
 /* /mix */
+
+/* typo */
+h1 {
+    color: #fff;
+}
+h2, h3 {
+    color: #031b4e;
+}
+/* /typo */
 
 /* buttons */
 .btn--bordered, .header__nav .btn--bordered {
@@ -34,6 +44,7 @@ header {
     left: 0;
     background-color: #fff;
     box-shadow: 0px 2px 4px rgba(3, 27, 78, 0.1);
+    z-index: 999;
 }
 
 #header__logo {
@@ -74,5 +85,49 @@ header {
     #btn--menu {
         display: none;
     }
+}
+/* /---- from medium devices / desktops ----  */
+/* /header responsive */
+/* header */
+
+/* main */
+section {
+    padding: 60px 0;
+}
+/* hero */
+
+
+
+
+/* /hero */
+#hero {
+    background-image: url("../img/bg-hero.svg");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login__box {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px 20px;
+}
+
+.login__box h3 span {
+    color: #006aff;
 
 }
+
+.login__form input {
+    width: 100%;
+    border: 1px solid #e5e8ed;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+
+
+
+
+/* /main */
