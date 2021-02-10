@@ -1,6 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    padding-top: 60px;
+    font-family: 'Inter', sans-serif;    padding-top: 60px;
 }
 
 .debug * {
@@ -11,14 +10,24 @@ body {
 .list-inline {
     margin-bottom: 0;
 }
+.color--secondary {
+    color: #006aff;
+}
+
 /* /mix */
 
 /* typo */
 h1 {
     color: #fff;
+    font-size: 40px;
+    font-weight: 700;
 }
 h2, h3 {
     color: #031b4e;
+    margin: 10px 0;
+}
+h3 {
+    font-weight: 500;
 }
 /* /typo */
 
@@ -28,7 +37,12 @@ h2, h3 {
     border: 1px solid #006aff;
     color: #006aff;
 }
-.btn--bordered:hover, .header__nav .btn--bordered:hover {
+.btn { 
+    background-color: #fff;
+}
+.btn--bordered:hover, 
+.header__nav .btn--bordered:hover,
+.btn--primary {
     background-color: #006aff;
     color: #fff;
 }
@@ -94,19 +108,29 @@ header {
 section {
     padding: 60px 0;
 }
+
+a, a:hover {
+    color: #006aff;
+}
+
+
 /* hero */
-
-
-
-
-/* /hero */
 #hero {
     background-image: url("../img/bg-hero.svg");
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 65%;
 }
 
+/* hero__heading */
+.hero__heading p {
+    font-size: 20px;
+    color: #fff;
+    opacity: .8;
+}
+/* /hero__heading */
+/* login form */
 .login__box {
     background-color: #fff;
     border-radius: 5px;
@@ -115,19 +139,71 @@ section {
 
 .login__box h3 span {
     color: #006aff;
+    padding-top: 20px;
+}
 
+.login__form .form-group {
+    margin-bottom: 10px;
 }
 
 .login__form input {
     width: 100%;
-    border: 1px solid #e5e8ed;
     border-radius: 5px;
+}
+.login__text {
+    border: 1px solid #e5e8ed;
     padding: 10px;
 }
+.login__btn {
+    padding: 5px 10px;
+    border: none;
+    font-weight: 500;
+}
+
+#sso-google {
+    box-shadow: 2px 2px 2px #d3d3d3;
+    background-color: #fff;
+    color: #5b6987;
+    background-image: url("../img/google-icon.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+.login__box p {
+    color: #031b4e;
+}
+.login__box a {
+    text-decoration: underline;
+}
+/* login form */
+
+/* hero responsive */
+/* ---- from small devices / tablets ----  */
+@media screen and (min-width:768px) {
+    #hero {
+        background-position: 67%;
+    }
+}
+/* /---- from small devices / tablets ----  */
+
+/* ---- from medium devices / desktops ----  */
+@media screen and (min-width:992px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    #hero {
+        background-position: center;
+    }
+}
+/* /---- from medium devices / desktops ----  */
+/* /hero responsive */
 
 
 
 
 
 
+
+/* /hero */
 /* /main */
