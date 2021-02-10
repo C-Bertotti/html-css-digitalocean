@@ -14,6 +14,10 @@ body {
     color: #006aff;
 }
 
+.bg--secondary {
+    background-color: #f3f5f9;
+}
+
 /* /mix */
 
 /* typo */
@@ -28,6 +32,13 @@ h2, h3 {
 }
 h3 {
     font-weight: 500;
+}
+h5 {
+    color: #5b6987;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
 }
 /* /typo */
 
@@ -118,8 +129,18 @@ section {
 
 a, a:hover {
     color: #006aff;
+
 }
 
+a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #006aff;
+}
+
+a.link--arrow:after {
+    content: ">";
+    padding-left: 5px;
+}
 
 /* hero */
 #hero {
@@ -206,6 +227,46 @@ a, a:hover {
 /* /---- from medium devices / desktops ----  */
 /* /hero responsive */
 /* /hero */
+
+/* partners */
+#partners {
+    padding-bottom: 30px;
+}
+
+.partners__logo {
+    margin: 10px;
+}
+
+/* partners responsive */
+/* ---- from extra-small devices / smartphone ----  */
+@media screen and (max-width:768px) {
+    .partners__logo {
+        width: calc((100% / 2) - 24px);
+    }
+}
+/* /---- from extra-small devices / smartphone ----  */
+
+/* ---- from small devices / tablets ----  */
+@media screen and (min-width:768px) {
+    .partners__logo {
+        width: calc((100% / 3) - 24px);
+    }
+}
+/* /---- from small devices / tablets ----  */
+
+/* ---- from medium devices / desktops ----  */
+@media screen and (min-width:992px) {
+    .partners__logo {
+        width: calc((100% / 6) - 24px);
+    }
+}
+/* /---- from medium devices / desktops ----  */
+/* /partners responsive */
+
+
+
+/* /partners */
+
 
 
 
