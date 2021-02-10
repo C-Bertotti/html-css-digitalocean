@@ -65,6 +65,13 @@ header {
     max-height: 28px;
 }
 
+.header__r--r {
+    float: left;
+}
+.header__r--l {
+    float: right;
+}
+
 .header__nav {
     display: none;
 }
@@ -93,12 +100,12 @@ header {
 /* ---- from medium devices / desktops ----  */
 @media screen and (min-width:992px) {
     .header__nav {
-        display: inline-block;
+        display: block;
     }
 
     #btn--menu {
         display: none;
-    }
+    } 
 }
 /* /---- from medium devices / desktops ----  */
 /* /header responsive */
@@ -198,12 +205,11 @@ a, a:hover {
 }
 /* /---- from medium devices / desktops ----  */
 /* /hero responsive */
-
-
-
-
-
-
-
 /* /hero */
+
+
+
+
+
+
 /* /main */
