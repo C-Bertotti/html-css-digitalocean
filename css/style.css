@@ -301,19 +301,21 @@ a.link--arrow:after {
 .feat__nav__btn  {
    display: block;
    border: none;
-   border-left: 1px solid #5b6987;
+   border-left: 2px solid #e5e8ed;
    color: #5b6987;
    padding: 10px 10px;
    font-size: 18px;
+   background-color: #fff;
 }
-.feat__nav__btn.active {
-    border-color: #031b4e;
-}
+
 .feat__nav__btn:focus {
     outline: none;
 }
-.feat__nav__btn:hover, .feat__nav__btn:active {
-    border-color: #031b4e;
+.feat__nav__btn:hover, 
+.feat__nav__btn:active,
+.feat__nav__btn.active {
+    border-color: #006aff;
+    border-width: 2px;
 }
 
 .feat__items img {
@@ -323,16 +325,6 @@ a.link--arrow:after {
 .feat__items p {
     font-size: 14px;
 }
-
-/* feat1 responsive */
-/* ---- from extra-small devices / smartphone ----  */
-@media screen and (max-width:768px) {
-    .partners__logo {
-        width: calc((100% / 2) - 24px);
-    }
-}
-/* /---- from extra-small devices / smartphone ----  */
-
 
 
 
