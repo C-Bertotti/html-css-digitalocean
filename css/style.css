@@ -26,7 +26,6 @@ body {
     max-width: 900px;
     margin: 0 auto;
 }
-
 /* /mix */
 
 /* helper class */
@@ -86,6 +85,10 @@ h2 + p {
     margin-bottom: 60px;
     text-align: center;
 }
+
+.txt--white {
+    color: #fff;
+}
 /* /typo */
 
 /* buttons */
@@ -106,6 +109,13 @@ h2 + p {
 
 button:focus {
     outline: none;
+}
+
+.btn--secondary, .btn--secondary:hover {
+    color: #006aff;
+}
+.btn--secondary:hover {
+    background-color: rgba(225,225,225,0.9);
 }
 /* buttons */
 
@@ -477,6 +487,7 @@ a.link--arrow:after {
 }
 
 #reviews .reviews__cit {
+    margin-top: 10px;
     font-size: 22px;
 }
 
@@ -489,11 +500,27 @@ a.link--arrow:after {
     margin-bottom: 0;
     font-weight: 500;
 }
-
-
-
 /* /reviews */
 
+/* get-strated */
+
+
+/* /get-strated */
+#get-started {
+    background-image: url("../img/bg-hero.svg");
+    background-size: 300%;
+    background-position: center;
+}
+/* get-started responsive */
+/* ---- from medium devices / desktops ----  */
+@media screen and (min-width:992px) {
+    #get-started {
+        background-size: 200%;
+    }
+   
+}
+/* /---- from medium devices / desktops ----  */
+/* /get-started responsive */
 
 
 
