@@ -14,6 +14,10 @@ body {
     color: #006aff;
 }
 
+.bg--primary {
+    background-color: #031b4e;
+    color: #fff;
+}
 .bg--secondary {
     background-color: #f3f5f9;
 }
@@ -28,6 +32,9 @@ body {
 /* helper class */
 .mg__b--30 {
     margin-bottom: 30px;
+}
+.mg__b--60 {
+    margin-bottom: 60px;
 }
 /* /helper class */
 
@@ -46,6 +53,9 @@ h2 {
     text-align: center;
     font-weight: 500;
     font-size: 36px;
+}
+.bg--primary h2 {
+    color: #fff;
 }
 h3, h4 {
     font-weight: 500;
@@ -198,6 +208,7 @@ a.link--arrow:after {
     opacity: .8;
 }
 /* /hero__heading */
+
 /* login form */
 .login__box {
     background-color: #fff;
@@ -405,7 +416,54 @@ a.link--arrow:after {
 }
 /* /feat2 */
 
+/* where */
+#where {
+    background-image: url("../img/bg-map.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+.table {
+    margin-bottom: 0;
+}
+.table>tbody>tr>td {
+    padding: 15px;
+}
+#where table tr:first-child > td {
+    border: none;
+}
+#where table tr td:first-child {
+    font-weight: 500;
+}
+#where table tr td:nth-child(2n) {
+    opacity: .7;
+    font-weight: 400;
+}
+#where table tr td:last-child {
+    text-align: right;
+}
+
+#where .link--arrow {
+    color: #00d7d2;
+}
+#where .link--arrow:hover {
+    border: none;
+    color: #006aff;
+}
+
+#where .table.table--left tr:last-child td {
+    border-bottom: 1px solid #ddd;
+}
+
+/* where responsive */
+/* ---- from medium devices / desktops ----  */
+@media screen and (min-width:992px) {
+    #where .table.table--left tr:last-child td {
+        border-bottom: none;
+    }
+}
+/* /---- from medium devices / desktops ----  */
+/* /where responsive */
 
 
 
