@@ -560,10 +560,17 @@ footer a:hover {
 .footer__right ul {
     padding-left: 0;
 }
-
-
-
-
-
 /* /footer */
 
+/* bot */
+.bot {
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: #006aff;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-image: ;
+}
+/* /bot */
